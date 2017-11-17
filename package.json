@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "express": "^4.16.2",
+    "express-http-proxy": "^1.1.0",
+    "ip": "^1.1.5"
+  },
+  "scripts": {
+    "start": "node proxy.js"
+  },
+  "name": "local-ip-proxy",
+  "version": "1.0.0",
+  "description":
+    "Proxy requests from your local IP address to a development server running on the host machine.",
+  "main": "proxy.js",
+  "repository": "https://github.com/BlakeSimpson/local-ip-proxy",
+  "author": "Blake Simpson",
+  "license": "MIT",
+  "private": false
+}
