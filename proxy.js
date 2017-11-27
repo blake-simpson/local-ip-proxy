@@ -10,6 +10,12 @@ const proxyURL = `https://${proxyHostname}/`;
 const ipAddress = ip.address();
 const serverURL = `http://${ipAddress}:${port}/`;
 
+if (!proxyHostname) {
+  console.error('You must pass a hostname to the proxy');
+  console.error('node proxy.js my-host.com');
+  process.exit(1);
+}
+
 app.use(
   '/',
   proxy(proxyHostname, {
